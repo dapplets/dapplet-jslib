@@ -1,0 +1,34 @@
+{
+  "name": "@dapplets/dapplet-jslib",
+  "version": "0.1.9",
+  "description": "Connect Dapplets into your website",
+  "main": "lib/dapplet-jslib.min.js",
+  "scripts": {
+    "build": "webpack --env build",
+    "start": "webpack --progress --colors --watch --env dev",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dapplets/dapplet-jslib.git"
+  },
+  "keywords": [],
+  "author": "Dapplets Project",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dapplets/dapplet-jslib/issues"
+  },
+  "homepage": "https://github.com/dapplets/dapplet-jslib",
+  "devDependencies": {
+    "raw-loader": "^4.0.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "yargs": "^15.1.0"
+  },
+  "dependencies": {
+    "@dapplets/dapplet-extension": "latest"
+  },
+  "files": [
+    "lib/dapplet-jslib.min.js"
+  ]
+}
