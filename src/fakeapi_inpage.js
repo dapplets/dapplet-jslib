@@ -1,7 +1,7 @@
 import popup_script from '!raw-loader!@dapplets/dapplet-extension/build/popup.js'
 import deploy_script from '!raw-loader!@dapplets/dapplet-extension/build/deploy.js'
 import pairing_script from '!raw-loader!@dapplets/dapplet-extension/build/pairing.js'
-import dapplet_script from '!raw-loader!@dapplets/dapplet-extension/build/dapplet.js'
+import sowa_script from '!raw-loader!@dapplets/dapplet-extension/build/sowa.js'
 
 import fakeapi_frame_script from '!raw-loader!./fakeapi_frame.js'
 
@@ -49,8 +49,8 @@ browser.extension.getURL = function (url) {
         script = deploy_script;
     } else if (url === 'pairing.html') {
         script = pairing_script;
-    } else if (url === 'dapplet.html') {
-        script = dapplet_script;
+    } else if (url === 'sowa.html') {
+        script = sowa_script;
     }
 
     if (script === null) return;
