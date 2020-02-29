@@ -1,6 +1,6 @@
 {
   "name": "@dapplets/dapplet-jslib",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Connect Dapplets into your website",
   "main": "lib/dapplet-jslib.min.js",
   "scripts": {
