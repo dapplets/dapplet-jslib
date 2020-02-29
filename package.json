@@ -1,12 +1,13 @@
 {
   "name": "@dapplets/dapplet-jslib",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "description": "Connect Dapplets into your website",
   "main": "lib/dapplet-jslib.min.js",
   "scripts": {
     "build": "webpack --env build",
     "start": "webpack --progress --colors --watch --env dev",
-    "prepublish": "npm run build"
+    "clean:dapplets": "if exist node_modules/@dapplets rd /q /s node_modules/@dapplets",
+    "prepublishOnly": "npm run clean:dapplets && npm i && npm run build"
   },
   "repository": {
     "type": "git",
