@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --env build",
     "start": "webpack --progress --colors --watch --env dev",
-    "clean:dapplets": "if exist node_modules/@dapplets rd /q /s node_modules/@dapplets",
+    "clean:dapplets": "if exist \"node_modules/@dapplets\" rd /q /s \"node_modules/@dapplets\"",
     "prepublishOnly": "npm run clean:dapplets && npm i && npm run build"
   },
   "repository": {
